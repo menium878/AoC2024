@@ -2,6 +2,9 @@
 #include <string>
 #include <sstream>
 #include <unordered_set>
+ #include <iostream>
+ #include <vector>
+#include <algorithm>
 bool comp(std::string a, std::string b) {
     return stoi(a) > stoi(b);
 }
