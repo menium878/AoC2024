@@ -5,6 +5,8 @@
  #include <iostream>
  #include <vector>
 #include <algorithm>
+
+// I know its shit but did the job the ugliest way possible 
 bool comp(std::string a, std::string b) {
     return stoi(a) > stoi(b);
 }
