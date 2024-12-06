@@ -4,17 +4,7 @@
 #include <vector>
 #include <algorithm>
 #include <iostream>
-bool hasPair(const std::vector<std::pair<int, int>> &vec, int a, int b)
-{
-    for (const auto &p : vec)
-    {
-        if (p.first == a && p.second == b)
-        {
-            return true;
-        }
-    }
-    return false;
-}
+
 enum Direction {
     right,
     down,
