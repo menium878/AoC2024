@@ -16,11 +16,11 @@ bool req(unsigned long long wynik, std::vector<int> &a,char symbol,int i,unsigne
 
     if (symbol=='+') sum+=a[i];
     if(symbol == '*') sum*=a[i];
-    if(symbol == '|') sum = std::stoll(std::to_string(sum)+std::to_string(a[i]));
+    if(symbol == '|') sum = std::stoll(std::to_string(sum)+std::to_string(a[i]));  //comment if part 1
     i++;
     req(wynik,a,'+',i,sum,bierz);
     req(wynik,a,'*',i,sum,bierz);
-    req(wynik,a,'|',i,sum,bierz);
+    req(wynik,a,'|',i,sum,bierz); //comment if part 1
 }
 
 
@@ -67,7 +67,7 @@ std::ifstream file("cos.txt");
         
         req(b,c,'+',0,0,bierz);
         req(b,c,'*',0,0,bierz);
-        req(b,c,'|',0,0,bierz);
+        req(b,c,'|',0,0,bierz); //comment if part 1
         if (bierz)  calkowita+=b;
         
     }
