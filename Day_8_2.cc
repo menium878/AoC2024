@@ -3,11 +3,10 @@
 #include <vector>
 #include <string>
 #include <sstream>
-
 #include<unordered_map>
+
 int main() {
     
-
 std::ifstream file("cos.txt"); 
 
     
