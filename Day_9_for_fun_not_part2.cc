@@ -16,15 +16,7 @@ bool is_number(const std::string& s)
     return !s.empty() && std::find_if(s.begin(), 
         s.end(), [](unsigned char c) { return !std::isdigit(c); }) == s.end();
 }
-void replace_all_occurrences(std::vector<std::string>& input, const std::string& old_str, const std::string& new_str) {
-    for (auto& str : input) {
-        size_t pos = 0;
-        while ((pos = str.find(old_str, pos)) != std::string::npos) {
-            str.replace(pos, old_str.length(), new_str);
-            pos += new_str.length();
-        }
-    }
-}
+
 
 std::vector<std::string> swapDotsWithLastDigit(std::vector<std::string> &input) {
     std::unordered_map<std::string, size_t> counts;
