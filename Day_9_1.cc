@@ -30,7 +30,7 @@ std::vector<std::string> swapDotsWithLastDigit(std::vector<std::string> &input) 
         if (i > lastDigitIndex) 
         break;
 
-        if (input[i] == "." && lastDigitIndex != -1) {
+        if (input[i] == "." ) {
            
             std::swap(input[i], input[lastDigitIndex]);
 
