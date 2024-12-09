@@ -1,4 +1,4 @@
-// This solution is so it doesn't care for order from the back of the numbers
+// This solution is so it doesn't care for order from the back of the numbers so if 2 can fit it will move first so then the 8 can go in the spot befor was 3 dot not is 4 so it fits
 
 
     #include <fstream>
