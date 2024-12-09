@@ -9,11 +9,10 @@ int main() {
     
 
 std::ifstream file("cos.txt"); 
-char ch;
-    std::string line;
+std::string line;
 while(std::getline(file,line)){
 }
-//std::cout<<line;
+
 std::string first;
 int count=0;
 for (size_t i = 0; i < line.size(); i++)
