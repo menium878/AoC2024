@@ -10,7 +10,7 @@ const int bliks=25;
 long long countDigit(long long n) { return floor(log10(n) + 1); }
 int main(){
     
-    std::vector<long long> starting ={6563348,67,395,0,6,4425,89567,739318};
+    std::vector<long long> starting ={};
     
     for(int i=0;i<bliks;i++){
         std::vector<long long> buffer;
